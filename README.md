@@ -4,3 +4,33 @@
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
+
+# Dev
+
+1. Clonar el proyecto
+
+2. Copiar el `.env.template` y renombrar a `.env`
+
+3. Ejecutar
+
+```
+yarn install
+```
+
+4. levantar la imagen (Docker desktop)
+
+```
+docker-compose up -d
+```
+
+5. Levantar el backend de Nest
+
+```
+yarn start:dev
+```
+
+6. Visitar el sitio
+
+```
+http://localhost:3000/graphql
+```
