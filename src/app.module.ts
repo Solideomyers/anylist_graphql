@@ -26,12 +26,12 @@ import { ListItemModule } from './list-item/list-item.module';
         plugins: [ApolloServerPluginLandingPageLocalDefault()],
         playground: false,
         autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
-        context({ req }) {
-          // const token = req.headers.authorization?.replace('Bearer ', '');
-          // if (!token) throw Error('Token needed');
-          // const payload = jwtService.decode(token);
-          // if (!payload) throw Error('Token not valid');
-        },
+        // context({ req }) {
+        //   const token = req.headers.authorization?.replace('Bearer ', '');
+        //   if (!token) throw Error('Token needed');
+        //   const payload = jwtService.decode(token);
+        //   if (!payload) throw Error('Token not valid');
+        // },
       }),
     }),
 
