@@ -25,6 +25,7 @@ import { ListItemModule } from './list-item/list-item.module';
       useFactory: async (jwtService: JwtService) => ({
         plugins: [ApolloServerPluginLandingPageLocalDefault()],
         playground: false,
+
         autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
         // context({ req }) {
         //   const token = req.headers.authorization?.replace('Bearer ', '');
@@ -44,6 +45,7 @@ import { ListItemModule } from './list-item/list-item.module';
 
     TypeOrmModule.forRoot({
       type: 'postgres',
+
       url: process.env.DB_URL,
       ssl:
         process.env.STATE === 'prod'
