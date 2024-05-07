@@ -75,13 +75,4 @@ import { ListItemModule } from './list-item/list-item.module';
   controllers: [],
   providers: [],
 })
-export class AppModule {
-  constructor() {
-    console.log('host:', process.env.DB_HOST);
-    console.log('port:', +process.env.DB_PORT);
-    console.log('username:', process.env.DB_USERNAME);
-    console.log('database:', process.env.DB_NAME);
-    console.log('pas:', process.env.DB_PASSWORD);
-    console.log('STATE:', process.env.STATE);
-  }
-}
+export class AppModule {}
