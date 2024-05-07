@@ -42,9 +42,9 @@ export class SeedService {
   }
 
   async executeSeed() {
-    if (this.isProd) {
-      throw new UnauthorizedException('We cannot execute seed on prod');
-    }
+    // if (this.isProd) {
+    //   throw new UnauthorizedException('We cannot execute seed on prod');
+    // }
 
     await this.deleteDB();
 

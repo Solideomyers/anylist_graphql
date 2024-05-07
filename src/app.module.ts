@@ -57,7 +57,6 @@ import { ListItemModule } from './list-item/list-item.module';
       username: process.env.DB_USERNAME,
       database: process.env.DB_NAME,
       password: process.env.DB_PASSWORD,
-      synchronize: true,
       autoLoadEntities: true,
     }),
 
